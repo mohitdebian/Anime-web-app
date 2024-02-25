@@ -13,7 +13,7 @@ header {
 }
 
 footer {
-  background: #eb3349;
+  background: #ffdd95;
   display: flex;
   flex-wrap: nowrap;
   align-content: center;
@@ -179,9 +179,9 @@ h1 {
 }
 
 .watch-btn {
-  background: #ed3832;
+  background: #ffdd95;
   color: black;
-  border-radius: 4px;
+  border-radius: 30px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   padding: 10px 20px;
@@ -285,6 +285,8 @@ h2 {
 }
 
 #latest {
+  font-weight: 700;
+  color: #ffdd95;
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 15px;
@@ -317,7 +319,6 @@ h2 {
 }
 
 .shadow {
-  
   /* box-shadow: inset 0px -100px 50px -50px rgba(32, 33, 37, 1); */
   position: relative;
   height: 200px;
@@ -438,7 +439,7 @@ h2 {
 
 .la-details span {
   border-radius: 5%;
-  
+
   color: rgba(255, 255, 255, 0.3);
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -497,6 +498,10 @@ h2 {
 }
 
 #title1 {
+  align-items: center;
+  /* margin-left: 5%; */
+  display: flex;
+  flex-direction: row;
   /* justify-content: flex-start;
     align-items: start; */
   text-align: start;
@@ -602,6 +607,7 @@ h2 {
   }
 
   #search-div {
+    margin-right: 2.5%;
     position: absolute;
     right: 0px;
     top: 25px;
@@ -705,7 +711,7 @@ h2 {
 }
 
 .spotlight {
-  color: #ed3832;
+  color: #ffdd95;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   margin-bottom: 20px;
@@ -795,34 +801,36 @@ h2 {
 }
 
 @media only screen and (max-width: 480px) {
+  #search-div button i {
+    margin-right: 10px;
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    top: 30%;
+  }
 
-    #search-div button i{
-        margin-right: 10px;
-        position: absolute;
-        right: 5%;
-        bottom: 0;
-        top: 30%;
+  #query {
+    position: relative;
+    top: 7%;
+    margin-right: 2%;
+    width: calc(100% - 55px);
+    height: 40px;
+  }
 
-    }
-
-    #query {
-        position: relative;
-        top: 7%;
-        margin-right: 2%;
-        width: calc(100% - 55px);
-        height: 40px;
-      }
+  .anime-logo {
+    position: absolute;
+    bottom: 19px;
+  }
 
   #search-div {
     height: fit-content;
     background-color: white;
     border-radius: 5px;
     height: 40px;
-    width: 30%;
     top: 25px;
-    right: 10%;
+    right: 3%;
 
-    width: 80%;
+    width: 44%;
     margin-right: 0;
   }
 
@@ -856,7 +864,7 @@ h2 {
 
   .watch-btn {
     font-size: 12px;
-    padding: 6px 12px;
+    padding: 0.65rem 1rem;
   }
 
   .watch-btn2 {
