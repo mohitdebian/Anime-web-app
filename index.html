@@ -44,10 +44,13 @@
         <div id="title1">
             <!-- <a href="./index.html"><img width="150" height="40" src="./static/header.png" alt="AnimeDex"></a> -->
             <!-- <a href="./index.html" style="color: white; margin-right:50%;" >AnimeDex</a> -->
-            <img src="./static/logo.png" class="anime-logo" style="width: 45px;  cursor: pointer; margin-left: 2.5%;" alt="" onclick="home()">
+            <img src="./static/anime-logo.png" class="anime-logo" style="height: 45px;  cursor: pointer; margin-left: 2.5%;" alt="" onclick="home()">
+            <img src="./static/twitter.png" class="twitter-logo" style="height: 45px; cursor: pointer;" alt="" onclick="twitter()">
+            <img src="./static/insta.png" class="insta-logo" style="height: 50px; cursor: pointer;" alt="" onclick="insta()">
         </div>
         <div id="search-div">
-            <form action="./search.html" method="GET">
+            
+            <form action="./search.html" class="anime-search" method="GET">
                 <input type="text" name="query" id="query" placeholder="Search Anime..." required />
                 <button name="search" type="submit"><i class="fa fa-search"></i></button>
             </form>
@@ -55,7 +58,7 @@
     </header>
 
     <section style="display: flex; justify-content: center; align-items: center;">
-        <div class="slideshow-container" style="width: 95%; "></div>
+        <div class="slideshow-container" style="width: 98%; "></div>
     </section>
 
     <section>

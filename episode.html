@@ -45,9 +45,11 @@
         <div id="title1">
             <!-- <a href="./index.html"><img width="150" height="40" src="./static/header.png" alt="AnimeDex"></a> -->
             <!-- <a href="./index.html" style="color: white; margin-right:50%;" >AnimeDex</a> -->
+            <img src="./static/anime-logo.png" class="anime-logo" style="height: 45px;  cursor: pointer; margin-left: 2.5%;" alt="" onclick="home()">
+            <!-- <img src="./static/twitter.png" class="twitter-logo" style="height: 45px; cursor: pointer;" alt="" onclick="twitter()"> -->
         </div>
-        <div id="search-div">
-            <form action="./search.html" method="GET">
+        <div id="search-div" style="width: 44%;">
+            <form action="./search.html" class="anime-search" method="GET">
                 <input type="text" name="query" id="query" placeholder="Search Anime..." required />
                 <button name="search" type="submit"><i class="fa fa-search"></i></button>
             </form>
@@ -71,7 +73,7 @@
     <div id="main-section" style="opacity: 0;display: none;">
         <section id="vid-sec">
             <div id="vid-div">
-                <div id="video">
+                <div id="video" style="border-radius: 10px;">
                     <iframe id="AnimeDexFrame" src="" style="border: 0px #ffffff none" scrolling="no" frameborder="0"
                         marginheight="0px" marginwidth="0px" allowfullscreen></iframe>
                 </div>
@@ -117,7 +119,7 @@
 
         <section id="watch">
             <div class="divo">
-                <h2>List Of Episodes:</h2>
+                <h2 style="color: #ffdd95; font-weight: 700;">List Of Episodes:</h2>
                 <!-- Episode Slider Start -->
                 <div id="slider-main" class="slider-main" style="display: none;">
                     <div id="slider-carousel" class="slider-carousel">
@@ -145,6 +147,8 @@
     </footer>
     <hr />
 
+
+    <script src="./js/links.js"></script>
     <script src="./js/episode.js"></script>
     <script src="https://kit.fontawesome.com/45cb819601.js" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"></script>

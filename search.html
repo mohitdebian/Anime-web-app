@@ -44,9 +44,12 @@
         <div id="title1">
             <!-- <a href="./index.html"><img width="150" height="40" src="./static/header.png" alt="AnimeDex"></a> -->
             <!-- <a href="./index.html" style="color: white; margin-right:50%;" >AnimeDex</a> -->
+            <img src="./static/anime-logo.png" class="anime-logo" style="height: 45px;  cursor: pointer; margin-left: 2.5%;" alt="" onclick="home()">
+            <img src="./static/twitter.png" class="twitter-logo" style="height: 45px; cursor: pointer;" alt="" onclick="twitter()">
         </div>
         <div id="search-div">
-            <form action="./search.html" method="GET">
+            
+            <form action="./search.html" class="anime-search" method="GET">
                 <input type="text" name="query" id="query" placeholder="Search Anime..." required />
                 <button name="search" type="submit"><i class="fa fa-search"></i></button>
             </form>
@@ -84,6 +87,7 @@
     </footer>
     <hr>
 
+    <script src="./js/links.js"></script>
     <script src="./js/search.js"></script>
     <script src="https://kit.fontawesome.com/45cb819601.js" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"></script>

@@ -476,6 +476,13 @@ h2 {
   width: 20px;
 }
 
+.twitter-logo{
+  margin-left: 60%;
+  bottom: 19px;
+  position: absolute;
+  margin-right: 5%;
+}
+
 #search-div button i {
   width: 16px;
   height: 16px;
@@ -624,6 +631,7 @@ h2 {
 }
 
 .data-slider h1 {
+  font-weight: 700;
   -webkit-box-orient: vertical;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -652,6 +660,7 @@ h2 {
 }
 
 .shado {
+  /* background: linear-gradient(to right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0.3) 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%); */
   box-shadow: 75px 0px 150px 100px #14151a inset;
   z-index: 1;
   width: 100%;
@@ -809,17 +818,69 @@ h2 {
     top: 30%;
   }
 
+  .anime-search:hover {
+    outline: none;
+    border-color: rgba(0, 48, 73, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+  }
+
+  .anime-logo {
+    content: url("../static/logo.png");
+  }
+
   #query {
     position: relative;
     top: 7%;
     margin-right: 2%;
     width: calc(100% - 55px);
     height: 40px;
+
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: 0.3s ease;
+  }
+
+  /* #quuery:focus,
+  #query:hover {
+    outline: none;
+    border-color: rgba(0, 48, 73, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+  } */
+
+  .anime-search:focus,
+  .anime-search:hover {
+    outline: none;
+    border-color: rgba(0, 48, 73, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+  }
+
+  #query::placeholder {
+    color: #626264;
   }
 
   .anime-logo {
     position: absolute;
     bottom: 19px;
+  }
+
+  .twitter-logo{
+    margin-left: 40%;
+    bottom: 19px;
+    position: absolute;
+    margin-right: 5%;
+  }
+
+  .insta-logo {
+    display: none;
   }
 
   #search-div {
@@ -829,7 +890,6 @@ h2 {
     height: 40px;
     top: 25px;
     right: 3%;
-
     width: 44%;
     margin-right: 0;
   }
@@ -878,6 +938,13 @@ h2 {
   .shado {
     box-shadow: 20px -20px 80px 40px #14151a inset;
   }
+}
+
+.insta-logo {
+  margin-left: 55%;
+  bottom: 17px;
+  position: absolute;
+  margin-right: 5%;
 }
 
 @media only screen and (max-width: 760px) and (min-width: 480px) {

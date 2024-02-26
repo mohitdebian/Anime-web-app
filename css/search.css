@@ -355,9 +355,16 @@ h2 {
 }
 
 #title1 {
+    align-items: center;
+    /* margin-left: 5%; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start;
+      align-items: start; */
+    text-align: start;
     height: fit-content;
-    width: 70%;
-}
+    width: 50%;
+  }
 
 #search-div {
     height: fit-content;
@@ -424,11 +431,6 @@ h2 {
 
     .la-anime {
         max-width: 220px;
-    }
-
-    #head-div {
-        padding-top: 25px;
-        width: 100%;
     }
 
     #title1 {
@@ -624,33 +626,70 @@ h2 {
 
 @media only screen and (max-width: 480px) {
 
-    #search-div button i{
+    #search-div button i {
         margin-right: 10px;
         position: absolute;
         right: 5%;
         bottom: 0;
         top: 30%;
-
-    }
-
-    #query {
+      }
+    
+      .anime-logo {
+        content: url("../static/logo.png");
+      }
+    
+      #query {
         position: relative;
         top: 7%;
         margin-right: 2%;
         width: calc(100% - 55px);
         height: 40px;
+    
+        line-height: 28px;
+        padding: 0 1rem;
+        padding-left: 2.5rem;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        outline: none;
+        background-color: #f3f3f4;
+        color: #0d0c22;
+        transition: 0.3s ease;
       }
-
-    #search-div {
+    
+      /* #quuery:focus,
+      #query:hover {
+        outline: none;
+        border-color: rgba(0, 48, 73, 0.4);
+        background-color: #fff;
+        box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+      } */
+    
+      .anime-search:focus,
+      .anime-search:hover {
+        outline: none;
+        border-color: rgba(0, 48, 73, 0.4);
+        background-color: #fff;
+        box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+      }
+    
+      #query::placeholder {
+        color: #626264;
+      }
+    
+      .anime-logo {
+        position: absolute;
+        bottom: 19px;
+      }
+    
+      #search-div {
         height: fit-content;
         background-color: white;
         border-radius: 5px;
         height: 40px;
-        width: 30%;
         top: 25px;
-        right: 10%;
+        right: 3%;
     
-        width: 80%;
+        width: 44%;
         margin-right: 0;
       }
 }
